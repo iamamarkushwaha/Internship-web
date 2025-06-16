@@ -1,0 +1,88 @@
+/* FRONTEND/src/components/ApplyForm.css */
+
+.apply-form {
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  padding: 30px;
+  margin-top: 30px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.apply-form h3 {
+  color: #007bff;
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.apply-form p {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #555;
+}
+
+.apply-form .form-group {
+  margin-bottom: 20px;
+}
+
+.apply-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333;
+}
+
+.apply-form input[type="text"],
+.apply-form input[type="email"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  font-size: 1em;
+  box-sizing: border-box; /* Include padding in width */
+}
+
+.apply-form input[readOnly] {
+  background-color: #e9ecef;
+  color: #6c757d;
+  cursor: not-allowed;
+}
+
+.apply-form .button {
+  width: 100%;
+  padding: 15px;
+  font-size: 1.1em;
+  background-color: #28a745; /* Green for Apply */
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.apply-form .button:hover {
+  background-color: #218838;
+}
+
+.apply-form .form-message {
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.apply-form .form-message.success {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.apply-form .form-message.error {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.apply-form .note {
+    font-size: 0.9em;
+    color: #777;
+    margin-top: 20px;
+    text-align: center;
+}

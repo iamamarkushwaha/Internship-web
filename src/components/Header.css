@@ -1,0 +1,123 @@
+/* FRONTEND/src/components/Header.css */
+
+.main-header {
+  background-color: #282c34; /* Dark blue/grey */
+  color: white;
+  padding: 15px 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  position: sticky; /* Makes header stick to top */
+  top: 0;
+  z-index: 1000; /* Ensures header is above other content */
+}
+
+.main-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-header .logo {
+  color: white;
+  text-decoration: none;
+  font-size: 1.8em;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.main-header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.main-header nav ul li {
+  margin-left: 25px;
+}
+
+.main-header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 0; /* Add padding for larger clickable area */
+  position: relative; /* For underline effect */
+  transition: color 0.3s ease;
+}
+
+.main-header nav ul li a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #61dafb; /* React blue */
+  transition: width 0.3s ease;
+}
+
+.main-header nav ul li a:hover::after,
+.main-header nav ul li a.active::after { /* 'active' class from NavLink */
+  width: 100%;
+}
+
+.main-header nav ul li a:hover,
+.main-header nav ul li a.active {
+  color: #61dafb;
+}
+
+/* Basic Search Bar (if implemented) */
+.main-header .search-bar {
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+}
+
+.main-header .search-bar input {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  font-size: 0.9em;
+}
+
+.main-header .search-bar button {
+  background-color: #61dafb;
+  color: #282c34;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.main-header .search-bar button:hover {
+  background-color: #4fa3d1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .main-header .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .main-header nav ul {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  .main-header nav ul li {
+    margin: 10px 0;
+  }
+
+  .main-header .search-bar {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 15px;
+  }
+
+  .main-header .search-bar input {
+    width: 100%;
+  }
+}

@@ -1,0 +1,96 @@
+/* FRONTEND/src/components/Footer.css */
+
+.main-footer {
+  background-color: #282c34;
+  color: white;
+  padding: 40px 0;
+  margin-top: 50px; /* Space from content above */
+  box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+}
+
+.main-footer .container {
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+  justify-content: space-between;
+  text-align: left;
+}
+
+.main-footer .footer-section {
+  flex: 1; /* Allow sections to grow/shrink */
+  min-width: 200px; /* Minimum width before wrapping */
+  margin-bottom: 20px;
+}
+
+.main-footer h4 {
+  color: #61dafb; /* React blue for headings */
+  margin-bottom: 15px;
+  font-size: 1.2em;
+}
+
+.main-footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.main-footer ul li {
+  margin-bottom: 10px;
+}
+
+.main-footer ul li a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.main-footer ul li a:hover {
+  color: #61dafb;
+}
+
+.main-footer p {
+  color: #ccc;
+  margin-bottom: 10px;
+}
+
+.main-footer .social-icons a {
+  color: white;
+  font-size: 1.5em;
+  margin-right: 15px;
+  transition: color 0.3s ease;
+}
+
+.main-footer .social-icons a:hover {
+  color: #61dafb;
+}
+
+.main-footer .copyright {
+  flex-basis: 100%; /* Take full width */
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  color: #aaa;
+  font-size: 0.9em;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .main-footer .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .main-footer .footer-section {
+    width: 100%; /* Full width on small screens */
+    margin-bottom: 30px;
+  }
+
+  .main-footer .social-icons {
+    margin-bottom: 20px;
+  }
+
+  .main-footer .social-icons a {
+    margin: 0 10px;
+  }
+}

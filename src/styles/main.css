@@ -1,0 +1,66 @@
+/* FRONTEND/src/index.css */
+
+/* Basic CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Container for consistent page width */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Basic Button Styles */
+.button {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  text-decoration: none; /* For button links */
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+/* Messages for loading, error, not found */
+.loading-message,
+.error-message,
+.not-found-message {
+  padding: 20px;
+  text-align: center;
+  font-size: 1.2em;
+  color: #555;
+  margin-top: 50px; /* Give some space from header */
+}
+
+.error-message {
+  color: #d9534f; /* Red for errors */
+  font-weight: bold;
+}
+
+/* Page container for consistent padding and max-width on content pages */
+.page-container {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: 20px auto;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,110 @@
+/* src/pages/InternshipDetailPage.css */
+
+.internship-detail-page {
+  padding: 30px;
+  max-width: 900px;
+  margin: 30px auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  line-height: 1.7;
+}
+
+.internship-detail-page h1 {
+  color: #007bff;
+  font-size: 2.8em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.internship-detail-page .internship-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 25px auto 35px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.internship-detail-page p {
+  margin-bottom: 12px;
+  font-size: 1.1em;
+  color: #555;
+}
+
+.internship-detail-page p strong {
+  color: #333;
+}
+
+.internship-detail-page h3 {
+  color: #282c34;
+  font-size: 1.8em;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 5px;
+}
+
+.internship-detail-page ul {
+  list-style-type: none; /* Remove default bullet */
+  padding-left: 0; /* Remove default padding */
+  margin-bottom: 20px;
+}
+
+.internship-detail-page ul li {
+  background-color: #e9f5ff; /* Light blue background */
+  border-left: 4px solid #007bff;
+  padding: 10px 15px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  color: #333;
+  font-size: 1em;
+}
+
+.internship-detail-page .detail-page-actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 15px; /* Space between buttons */
+}
+
+.internship-detail-page .button {
+  padding: 12px 25px;
+  font-size: 1.1em;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.internship-detail-page .back-button {
+    background-color: #6c757d; /* Grey color for back button */
+}
+
+.internship-detail-page .back-button:hover {
+    background-color: #5a6268;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .internship-detail-page {
+    padding: 20px;
+    margin: 20px auto;
+  }
+  .internship-detail-page h1 {
+    font-size: 2em;
+  }
+  .internship-detail-page h3 {
+    font-size: 1.5em;
+  }
+  .internship-detail-page .button {
+    font-size: 1em;
+    padding: 10px 20px;
+  }
+  .internship-detail-page .detail-page-actions {
+    flex-direction: column; /* Stack buttons on small screens */
+    align-items: center;
+  }
+  .internship-detail-page .button {
+    width: 100%; /* Make buttons full width */
+    max-width: 300px;
+  }
+}

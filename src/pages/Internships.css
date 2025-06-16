@@ -1,0 +1,19 @@
+.internships-page {
+  width: 100vw;
+  padding: 2rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  width: 100%;
+}
+
+.card {
+  background-color: #1c1c1c;
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 1px solid #333;
+  transition: 0.3s;
+}
