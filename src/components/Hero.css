@@ -25,7 +25,6 @@
 .hero-section h1 {
   font-size: 3.5em;
   margin-bottom: 20px;
-  color: #007bff; /* Primary blue for heading */
 }
 
 .hero-section p {
@@ -63,4 +62,8 @@
   .hero-section p {
     font-size: 1em;
   }
+}
+.typing-text {
+  font-size: 3rem;
+  margin: 10px 0;
 }

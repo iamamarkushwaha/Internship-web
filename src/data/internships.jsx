@@ -1,12 +1,12 @@
-// src/data/internships.jsx
-
-// This file exports an array of internship objects.
-// All frontend data will come from this file.
+import frontendImg from '../assets/frontend.jpg';
+import javaImg from '../assets/java.png';
+import reactImg from '../assets/react.png';
+import dataImg from '../assets/data.png';
 
 export const internships = [
   {
     id: '1',
-    title: 'Software Development Intern',
+    title: 'Frontend Development Intern',
     company: 'Tech Solutions Inc.',
     location: 'Bangalore, India',
     duration: '3 Months',
@@ -27,11 +27,11 @@ export const internships = [
       'Currently pursuing a degree in Computer Science or a related technical field.',
       'Strong problem-solving skills and meticulous attention to detail.'
     ],
-    image: '/assets/dev-internship.jpg' // You'll place images in public/assets/
+    image: frontendImg // You'll place images in public/assets/
   },
   {
     id: '2',
-    title: 'Data Science Intern',
+    title: 'Java Intern',
     company: 'Data Insights Co.',
     location: 'Mumbai, India',
     duration: '6 Months',
@@ -52,11 +52,11 @@ export const internships = [
       'Experience with data visualization tools (e.g., Matplotlib, Seaborn, Tableau).',
       'Excellent analytical and communication skills for presenting findings.'
     ],
-    image: '/assets/data-internship.jpg'
+    image: javaImg
   },
   {
     id: '3',
-    title: 'Digital Marketing Intern',
+    title: 'React.js Intern',
     company: 'Brand Builders Ltd.',
     location: 'Delhi, India',
     duration: '4 Months',
@@ -77,7 +77,7 @@ export const internships = [
       'Ability to work independently and collaboratively as part of a team.',
       'Currently pursuing a degree in Marketing, Business, or Communications.'
     ],
-    image: '/assets/marketing-internship.jpg'
+    image: reactImg
   },
   {
     id: '4',
@@ -102,56 +102,56 @@ export const internships = [
       'Strong communication and presentation skills to articulate design decisions.',
       'A portfolio demonstrating relevant design projects and thought process.'
     ],
-    image: '/assets/uiux-internship.jpg'
+    image: dataImg
   },
-  {
-    id: '5',
-    title: 'Cloud Engineering Intern',
-    company: 'NextGen Cloud',
-    location: 'Bengaluru, India',
-    duration: '6 Months',
-    stipend: '₹25,000/month',
-    applyBy: '2025-08-20',
-    description: 'Gain hands-on experience with cloud platforms (AWS, Azure, GCP). You will assist in deploying, managing, and monitoring cloud-based infrastructure and applications. Knowledge of Linux and scripting is beneficial.',
-    responsibilities: [
-      'Assist with cloud resource provisioning and configuration.',
-      'Monitor cloud infrastructure and respond to alerts.',
-      'Support automation efforts using scripting languages (e.g., Python, Bash).',
-      'Learn and apply cloud security best practices.',
-      'Contribute to documentation of cloud architectures.'
-    ],
-    requirements: [
-      'Basic understanding of cloud computing concepts.',
-      'Familiarity with Linux operating systems.',
-      'Experience with one or more scripting languages (Python, Bash).',
-      'Eagerness to learn about AWS, Azure, or GCP.',
-      'Strong analytical and troubleshooting skills.'
-    ],
-    image: '/assets/cloud-internship.jpg'
-  },
-  {
-    id: '6',
-    title: 'Technical Support Intern',
-    company: 'Global Support Solutions',
-    location: 'Pune, India',
-    duration: '3 Months',
-    stipend: '₹10,000/month',
-    applyBy: '2025-07-10',
-    description: 'Provide technical assistance and support to clients experiencing software or hardware issues. You will be the first point of contact, diagnosing problems and providing solutions or escalating as necessary.',
-    responsibilities: [
-      'Respond to customer inquiries via phone, email, or chat.',
-      'Diagnose and troubleshoot technical issues.',
-      'Document support interactions and resolutions.',
-      'Escalate complex issues to senior technical staff.',
-      'Maintain knowledge base articles.'
-    ],
-    requirements: [
-      'Excellent communication and interpersonal skills.',
-      'Basic understanding of computer systems and networks.',
-      'Ability to explain technical concepts clearly to non-technical users.',
-      'Patient and customer-focused attitude.',
-      'Currently pursuing a degree in IT, Computer Science, or related field.'
-    ],
-    image: '/assets/support-internship.jpg'
-  },
+  // {
+  //   id: '5',
+  //   title: 'Cloud Engineering Intern',
+  //   company: 'NextGen Cloud',
+  //   location: 'Bengaluru, India',
+  //   duration: '6 Months',
+  //   stipend: '₹25,000/month',
+  //   applyBy: '2025-08-20',
+  //   description: 'Gain hands-on experience with cloud platforms (AWS, Azure, GCP). You will assist in deploying, managing, and monitoring cloud-based infrastructure and applications. Knowledge of Linux and scripting is beneficial.',
+  //   responsibilities: [
+  //     'Assist with cloud resource provisioning and configuration.',
+  //     'Monitor cloud infrastructure and respond to alerts.',
+  //     'Support automation efforts using scripting languages (e.g., Python, Bash).',
+  //     'Learn and apply cloud security best practices.',
+  //     'Contribute to documentation of cloud architectures.'
+  //   ],
+  //   requirements: [
+  //     'Basic understanding of cloud computing concepts.',
+  //     'Familiarity with Linux operating systems.',
+  //     'Experience with one or more scripting languages (Python, Bash).',
+  //     'Eagerness to learn about AWS, Azure, or GCP.',
+  //     'Strong analytical and troubleshooting skills.'
+  //   ],
+  //   image: '/assets/cloud-internship.jpg'
+  // },
+  // {
+  //   id: '6',
+  //   title: 'Technical Support Intern',
+  //   company: 'Global Support Solutions',
+  //   location: 'Pune, India',
+  //   duration: '3 Months',
+  //   stipend: '₹10,000/month',
+  //   applyBy: '2025-07-10',
+  //   description: 'Provide technical assistance and support to clients experiencing software or hardware issues. You will be the first point of contact, diagnosing problems and providing solutions or escalating as necessary.',
+  //   responsibilities: [
+  //     'Respond to customer inquiries via phone, email, or chat.',
+  //     'Diagnose and troubleshoot technical issues.',
+  //     'Document support interactions and resolutions.',
+  //     'Escalate complex issues to senior technical staff.',
+  //     'Maintain knowledge base articles.'
+  //   ],
+  //   requirements: [
+  //     'Excellent communication and interpersonal skills.',
+  //     'Basic understanding of computer systems and networks.',
+  //     'Ability to explain technical concepts clearly to non-technical users.',
+  //     'Patient and customer-focused attitude.',
+  //     'Currently pursuing a degree in IT, Computer Science, or related field.'
+  //   ],
+  //   image: '/assets/support-internship.jpg'
+  // },
 ];

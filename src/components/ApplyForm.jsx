@@ -27,7 +27,7 @@ function ApplyForm({ internshipId }) {
     // If you want to pre-fill, you'd construct a URL like:
     // const formUrl = `<span class="math-inline">\{GOOGLE\_FORM\_BASE\_URL\}?entry\.YOUR\_NAME\_FIELD\_ID\=</span>{encodeURIComponent(name)}&entry.YOUR_EMAIL_FIELD_ID=<span class="math-inline">\{encodeURIComponent\(email\)\}&entry\.YOUR\_INTERNSHIP\_ID\_FIELD\_ID\=</span>{encodeURIComponent(internshipId)}`;
     // To find field IDs, inspect the Google Form's HTML or submit a test entry and check the URL.
-    window.open(GOOGLE_FORM_BASE_URL, '_blank');
+    window.open('https://docs.google.com/forms/d/e/1FAIpQLSe8c9-condLHjHwDqwaEdvaGboH0L9GCKLdT2RJn_JalUIHOQ/viewform?usp=dialog', '_blank');
 
     setMessage('Redirecting to Google Form...');
     setName('');
